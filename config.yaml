@@ -1,0 +1,29 @@
+timesteps: [0,250]
+
+models:
+  c_num: 17
+  z_dim: 1024
+  timesteps: ${timesteps}
+
+data:
+  data_dir: D:/data/Preprocessed_data_250Hz_whiten
+  img_dir: D:/data/Image_set_Resize
+  selected_ch: ['P7', 'P5', 'P3', 'P1','Pz', 'P2', 'P4', 'P6', 'P8', 'PO7', 'PO3', 'POz', 'PO4', 'PO8','O1', 'Oz', 'O2']
+  train_batch_size: 256
+  val_batch_size: 200
+  test_batch_size: 200
+
+
+  train_avg: True
+  test_avg: True
+  timesteps: ${timesteps}
+
+train:
+  epoch: 50
+  lr: 1e-4
+
+
+
+#exp_setting: 'inter-subject'
+
+
