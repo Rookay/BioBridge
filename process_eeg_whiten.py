@@ -27,7 +27,7 @@ tmin = -0.2
 tmax = 1.0
 whiten = True
 
-project_dir = 'D:\\coda\\Uncertainty-aware-Blur-Prior-main\\data\\things-eeg'
+project_dir = 'D:\\coda\\data\\things-eeg'
 
 if whiten:
     save_dir = os.path.join(project_dir,
@@ -187,7 +187,7 @@ del whitened_test
 
 # 'img': duplicated_images,
 # 'label': label,
-img_directory = f'D:\\coda\\Uncertainty-aware-Blur-Prior-main\data\\things-eeg\\Image_set_Resize\\test_images'
+img_directory = f'D:\\coda\data\\things-eeg\\Image_set_Resize\\test_images'
 all_folders = [d for d in os.listdir(img_directory) if os.path.isdir(os.path.join(img_directory, d))]
 all_folders.sort()
 images = []
@@ -258,7 +258,7 @@ for i in range(len(np.unique(img_cond))):
     
 del ordered_data
 
-img_directory = f'D:\\coda\\Uncertainty-aware-Blur-Prior-main\\data\\things-eeg\\Image_set_Resize\\training_images'
+img_directory = f'D:\\coda\\data\\things-eeg\\Image_set_Resize\\training_images'
 all_folders = [d for d in os.listdir(img_directory) if os.path.isdir(os.path.join(img_directory, d))]
 all_folders.sort()
 images = []  
